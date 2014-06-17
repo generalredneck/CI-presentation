@@ -99,6 +99,13 @@ document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.se
        <section data-background="#F08">
         <h1 style="text-align: center;">Lauren, how much does our audience know?</h1>
       </section>
+      <section data-background='#F57E20'>
+        <h2>If you have questions...</h2>
+        <p> &nbsp;</p>
+        <p>Remember to Tweet!</p>
+        <h1>#DIYciQA</h1>
+        <p>We will pick several for the end of the show.</p>
+      </section>
      </section>
 
     <!-- What does CI mean to us?  -->
@@ -165,8 +172,8 @@ document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.se
      </section>
 
     <!-- Allan's Section -->
-      <section>
-        <section>
+      <section data-background='#0062A0'>
+        <section data-background='#F57E20'>
           <h2 class='static-heading' style=';' >Wait. What exactly is it again?</h2>
           <img src='http://guardianlv.com/wp-content/uploads/2013/11/kanye-west.jpg' />
         </section>
@@ -184,11 +191,19 @@ document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.se
                 <li>Build Availability</li>
                 <li>Test Result Availability</li>
             </ul>
-         </section>
+          </section>
+          <section data-background='#F57E20'>
+            <h1>Again!</h1>
+            <h2>If you have questions...</h2>
+            <p> &nbsp;</p>
+            <p>Remember to Tweet!</p>
+            <h1>#DIYciQA</h1>
+            <p>We will pick several for the end of the show.</p>
+          </section>
           <section>
-            <h3 style='margin:25px;'>Revision Control</h3>
+            <h2 style='margin:25px;'>Revision Control</h2>
             <p>
-            <img src='img/git-flow-timeline.png' width=33% class='not-fancy'/>
+            <img src='http://generalredneck.com/sites/default/files/static-content/midcamp-2014-diy-continuous-integration/img/git-flow-timeline.png' width=33% class='not-fancy'/>
             </p>
             <p>
             <small>Courtesy of <a href='http://joefleming.net/posts/git-flow/'>Joefleming.net</a></small>
@@ -200,7 +215,7 @@ document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.se
             </ul>
           </section>
           <section>
-            <h3>Build Automation</h3>
+            <h2>Build Automation</h2>
             <ul>
               <li>A single command should have the capability of building a system.</li>
               <li>Should be buildable from a fresh checkout.</li>
@@ -208,21 +223,23 @@ document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.se
             </ul>
           </section>
           <section>
-            <h3>Automate Deployment</h3>
+            <h2>Automate Deployment</h2>
             <ul>
               <li>Build an environment on a trigger.</li>
               <li>Automated process is faster than manual.</li>
               <li>Less mistakes, always the same.</li>
               <li>Usually provides an automated contingency plan if it fails.</li>
             </ul>
+            <p>&nbsp;</p>
             <h3>Jenkins</h3>
-            <img src='img/headshot.png' class='not-fancy'/>
+            <img src='http://generalredneck.com/sites/default/files/static-content/midcamp-2014-diy-continuous-integration/img/headshot.png' class='not-fancy'/>
           </section>
           <section>
-            <h3>Self-testing Build</h3>
+            <h2>Self-testing Build</h2>
             <ul>
               <li>When a build is created, tests should run to confirm that it behaves the way developers expect it to.</li>
             </ul>
+            <p>&nbsp;</p>
             <h3>PHPUnit</h3>
             <ul>
               <li>Popular unit testing software.</li>
@@ -231,12 +248,13 @@ document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.se
             </ul>
           </section>
           <section>
-            <h3>Testing in a Clone of Production</h3>
+            <h2>Testing in a Clone of Production</h2>
             <ul>
               <li>Environmental changes can lead to failures.</li>
               <li>If a copy cannot be provided, a scalable version reduces risk.</li>
               <li>Use configuration management tools to configure all builds.</li>
             </ul>
+            <p>&nbsp;</p>
             <h3>Chef</h3>
             <ul>
               <li>One thing that makes Vagrant configurable.</li>
@@ -245,7 +263,7 @@ document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.se
             </ul>
           </section>
           <section>
-            <h3>Frequent Commits</h3>
+            <h2>Frequent Commits</h2>
             <ul>
               <li>Makes debugging easier.</li>
               <li>Better history.</li>
@@ -254,7 +272,7 @@ document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.se
             </ul>
           </section>
           <section>
-            <h3>Code Consolidation</h3>
+            <h2>Code Consolidation</h2>
             <ul>
               <li>Every user should commit to a baseline once a day.</li>
               <li>Helps tests catch problems early.</li>
@@ -263,14 +281,14 @@ document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.se
             </ul>
           </section>
           <section>
-            <h3>Fast Builds</h3>
+            <h2>Fast Builds</h2>
             <ul>
               <li>Developers shouldn't be kept waiting.</li>
               <li>Resources on automatic builds shouldn't be kept waiting.</li>
             </ul>
           </section>
           <section>
-            <h3>Build Availability</h3>
+            <h2>Build Availability</h2>
             <ul>
               <li>It is more time effective to have environments prebuilt and "checked out" than building on the fly.</li>
               <li>Builds available for Stakeholders is a must.</li>
@@ -278,7 +296,7 @@ document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.se
             </ul>
           </section>
           <section>
-            <h3>Test Result Availability</h3>
+            <h2>Test Result Availability</h2>
             <ul>
               <li>Confidence in product.</li>
               <li>Provides a "Warranty".</li>
